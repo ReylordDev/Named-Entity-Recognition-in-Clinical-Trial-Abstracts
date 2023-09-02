@@ -1,0 +1,1167 @@
+- Abstract ID: '20092584'
+  Author:
+  - Fritsche A
+  - Larbig M
+  - Owens D
+  - "H \xE4 ring HU"
+  AvgAge:
+  - 60 . 2 + / - 7 . 5 years
+  ConclusionComment:
+  - An intensified basal - bolus regimen using glargine / glulisine results in a significantly
+    superior glycaemic control vs . premix therapy in a population with long - standing
+    insulin - treated T2D , with no increase in the rates of hypoglycaemia .
+  ConfIntervalDiff:
+  - '95 % Cl : - 0 . 714 , - 0 . 238'
+  - '95 % CI : - 10 . 40 , 2 . 60'
+  DiffGroupAbsValue:
+  - '- 0 . 476'
+  - '- 3 . 90'
+  Frequency:
+  - twice daily
+  - once daily
+  Journal:
+  - Diabetes Obes Metab .
+  NumberAffected:
+  - '43'
+  - '68'
+  NumberPatientsArm:
+  - '153'
+  - '157'
+  NumberPatientsCT:
+  - '310'
+  ObjectiveDescription:
+  - using premixed insulin ( premix ) twice daily .
+  - To compare the efficacy and safety of an intensified insulin regimen , using insulin
+    glargine ( glargine ) once daily and pre - meal insulin glulisine ( glulisine
+    ) ( basal - bolus ) , with a conventional therapy ,
+  PMID:
+  - '20092584'
+  PercentageAffected:
+  - 46 . 6
+  - 27 . 9
+  Precondition:
+  - subjects with type 2 diabetes ( T2D ) on premix , with or without metformin
+  PublicationYear:
+  - '2010'
+  PvalueDiff:
+  - p = 0 . 0001
+  - p = 0 . 0004
+  - p = 0 . 0033
+  - p < 0 . 0001
+  - p = 0 . 2104
+  - p = 0 . 0073
+  - p = 0 . 2385
+  ResultMeasuredValue:
+  - 98 . 0
+  - 91 . 3
+  - 13 . 99
+  - 18 . 54
+  SdDevBL:
+  - 0 . 8
+  - 0 . 9
+  - 15 . 0
+  - 15 . 1
+  SdDevChangeValue:
+  - 2 . 3
+  - 2 . 5
+  - 2 . 6
+  - 2 . 8
+  - 4 . 5
+  - 4 . 0
+  SdDevResValue:
+  - 44 . 3
+  - 48 . 7
+  SubGroupDescription:
+  - postprandial
+  - daytime
+  TimePoint:
+  - Endpoint
+  Title:
+  - Comparison between a basal - bolus and a premixed insulin regimen in individuals
+    with type 2 diabetes - results of the GINGER study .
+- Abstract ID: '24939043'
+  AllocationRatio:
+  - '1 : 1'
+  Author:
+  - Sha S
+  - Rothenberg P
+  - Polidori D
+  - "Plum - M \xF6 rschel L"
+  - Farrell K
+  - Sica D
+  - Natarajan J
+  - Wang SS
+  - Heise T
+  ConclusionComment:
+  - Canagliflozin provided sustained effects on UGE and FPG over 12 weeks and a transient
+    reduction in plasma volume that was largely attenuated by week 12 .
+  DoseValue:
+  - '300'
+  Journal:
+  - Diabetes Obes Metab .
+  NumberPatientsCT:
+  - '36'
+  ObjectiveDescription:
+  - additional measures of fluid / electrolyte balance in patients with type 2 diabetes
+    on background therapy with metformin and angiotensin - converting enzyme inhibitors
+    or angiotensin receptor blockers .
+  - To evaluate the effects of canagliflozin on plasma volume , urinary glucose excretion
+    ( UGE ) , fasting plasma glucose ( FPG ) , glycated haemoglobin ( HbA1c ) and
+  ObservedResult:
+  - reduced
+  - Reductions
+  - A modest numerical increase in urine volume was observed with canagliflozin at
+    week 1 that was attenuated at week 12
+  - remained modestly increased
+  PMID:
+  - '24939043'
+  Precondition:
+  - patients with type 2 diabetes on background therapy with metformin and angiotensin
+    - converting enzyme inhibitors or angiotensin receptor blockers
+  PublicationYear:
+  - '2014'
+  PvalueDiff:
+  - p = 0 . 02
+  - p = 0 . 76
+  TimePoint:
+  - week 12
+  - week 1
+  - weeks 1
+  - weeks 1 and 12
+  - week 12
+  - week 1
+  - week 1
+  - week 12
+  - week 12
+  Title:
+  - Effect of the sodium glucose co - transporter 2 inhibitor canagliflozin on plasma
+    volume in patients with type 2 diabetes mellitus .
+- Abstract ID: '17130197'
+  AllocationRatio:
+  - '1 : 2'
+  Author:
+  - Liu J
+  - Charbonnel B
+  - Wu M
+  - Karasik A
+  - Meininger G
+  ConclusionComment:
+  - Sitagliptin 100 mg once - daily added to ongoing metformin therapy was efficacious
+    and well tolerated in patients with type 2 diabetes who had inadequate glycemic
+    control with metformin alone .
+  DiffGroupAbsValue:
+  - '- 0 . 65'
+  DoseValue:
+  - '100'
+  Frequency:
+  - once - daily
+  Journal:
+  - Diabetes Care
+  MinAge:
+  - '19'
+  NumberPatientsCT:
+  - '701'
+  ObjectiveDescription:
+  - The efficacy and safety of the dipeptidyl peptidase - 4 inhibitor , sitagliptin
+    , added to ongoing metformin therapy ,
+  - were assessed in patients with type 2 diabetes who had inadequate glycemic control
+    ( HbA ( 1c ) [ A1C ] > or = 7 and < or = 10 % ) with metformin alone .
+  ObservedResult:
+  - were significantly improved
+  - There was no increased risk
+  - decreased similarly with sitagliptin and placebo
+  PMID:
+  - '17130197'
+  PercentageAffected:
+  - 47 . 0
+  - 18 . 3
+  Precondition:
+  - patients with type 2 diabetes who had inadequate glycemic control ( HbA ( 1c )
+    [ A1C ] > or = 7 and < or = 10 % ) with metformin alone
+  - with mild to moderate hyperglycemia ( mean A1C 8 . 0 % ) receiving ongoing metformin
+    ( > or = 1 , 500 mg / day )
+  PublicationYear:
+  - '2006'
+  Title:
+  - Efficacy and safety of the dipeptidyl peptidase - 4 inhibitor sitagliptin added
+    to ongoing metformin therapy in patients with type 2 diabetes inadequately controlled
+    with metformin alone .
+- Abstract ID: '24824197'
+  Author:
+  - Bajaj M
+  - Lewis - D ' Agostino D
+  - Woerle HJ
+  - Kempthorne - Rawson J
+  - Gilman R
+  - Patel S
+  ConclusionComment:
+  - 'Linagliptin as add - on therapy to metformin and pioglitazone produced significant
+    and clinically meaningful improvements in glycaemic control , without an additional
+    risk of hypoglycaemia or weight gain ( Clinical Trials Registry No : NCT 00996658
+    ) .'
+  DiffGroupAbsValue:
+  - '- 6'
+  - 2 . 94
+  - '- 0 . 57'
+  DoseValue:
+  - '5'
+  Frequency:
+  - once daily
+  Journal:
+  - Diabet Med .
+  NumberPatientsArm:
+  - '183'
+  - '89'
+  ObjectiveDescription:
+  - To investigate the efficacy and safety of the dipeptidyl peptidase - 4 inhibitor
+    linagliptin in patients with Type  2 diabetes mellitus inadequately controlled
+    by a combination of metformin and pioglitazone .
+  PMID:
+  - '24824197'
+  PercentageAffected:
+  - 32 . 4
+  - 13 . 8
+  - 3 . 4
+  - 2 . 2
+  - 5 . 5
+  - 5 . 6
+  Precondition:
+  - patients with Type  2 diabetes mellitus inadequately controlled by a combination
+    of metformin and pioglitazone
+  PublicationYear:
+  - '2014'
+  PvalueDiff:
+  - P < 0 . 0001
+  - P = 0 . 0033
+  - P = 0 . 0280
+  SubGroupDescription:
+  - "patients with baseline HbA1c \u2265 53  mmol / mol"
+  TimePoint:
+  - baseline
+  - week  24
+  Title:
+  - 'Linagliptin improved glycaemic control without weight gain or hypoglycaemia in
+    patients with type 2 diabetes inadequately controlled by a combination of metformin
+    and pioglitazone : a 24 - week randomized , double - blind study .'
+- Abstract ID: '25125506'
+  Author:
+  - Simpson RW
+  - Orford N
+  - Nicholson GC
+  - Sanders KM
+  - Wacher VJ
+  - Sarah A
+  - Chambers J
+  - Phillips G
+  - Walder K
+  - Skoff K
+  - Krippner G
+  - Proietto J
+  - MacGinley R
+  ConclusionComment:
+  - Methazolamide is the archetype for a new intervention in type 2 diabetes with
+    clinical benefits beyond glucose control .
+  ConfIntervalChangeValue:
+  - 95 % CI - 0 . 82 , 0 . 04
+  DoseValue:
+  - '40'
+  Frequency:
+  - b . i . d .
+  Journal:
+  - Diabetes Care
+  NumberPatientsArm:
+  - '39'
+  - '37'
+  NumberPatientsCT:
+  - '76'
+  ObjectiveDescription:
+  - To evaluate the safety and efficacy of methazolamide as a potential therapy for
+    type 2 diabetes .
+  PMID:
+  - '25125506'
+  PValueChangeValue:
+  - P < 0 . 05
+  PercentageAffected:
+  - '33'
+  - '8'
+  PublicationYear:
+  - '2014'
+  SdDevBL:
+  - 0 . 7
+  - 0 . 6
+  SubGroupDescription:
+  - metformin - cotreated patients
+  Title:
+  - 'Efficacy and safety of oral methazolamide in patients with type 2 diabetes :
+    a 24 - week , placebo - controlled , double - blind study .'
+- Abstract ID: '24356792'
+  Author:
+  - Rosenstock J
+  - Rigby SP
+  - Chou HS
+  ConclusionComment:
+  - Colesevelam monotherapy resulted in statistically significant improvements in
+    glycemic and most lipid parameters in subjects with type 2 diabetes , with no
+    new or unexpected safety and tolerability issues .
+  - Modest reductions in HbA1c and low - density lipoprotein cholesterol levels with
+    colesevelam further support its use in combination with other antidiabetes agents
+    when treatment targets for these parameters are close but are not quite achieved
+    .
+  DiffGroupAbsValue:
+  - '- 2 . 92'
+  - '- 10 . 3'
+  DoseValue:
+  - 3 . 75
+  Frequency:
+  - day
+  Journal:
+  - Horm Metab Res .
+  NumberPatientsArm:
+  - '176'
+  - '181'
+  ObjectiveDescription:
+  - "A study was conducted to evaluate colesevelam as monotherapy in drug - na \xEF\
+    \ ve patients with T2DM ."
+  PMID:
+  - '24356792'
+  PValueChangeValue:
+  - p = 0 . 0001
+  - p = 0 . 04
+  - p = 0 . 03
+  - p = 0 . 0001
+  - p = 0 . 0005
+  - p < 0 . 0001
+  Precondition:
+  - "drug - na \xEF ve patients with T2DM"
+  - "adults with T2DM who had inadequate glycemic control ( HbA1c \u2265 7 . 5 % and\
+    \ \u2264 9 . 5 % ) with diet and exercise alone"
+  PublicationYear:
+  - '2014'
+  PvalueDiff:
+  - p = 0 . 01
+  - p = 0 . 04
+  TimePoint:
+  - week 24
+  - baseline
+  Title:
+  - "The glucose and lipid effects of colesevelam as monotherapy in drug - na \xEF\
+    \ ve type 2 diabetes ."
+- Abstract ID: '17992639'
+  Author:
+  - "Ahr \xE9 n B"
+  - Tura A
+  - Pacini G
+  - Foley JE
+  - Schweizer A
+  AvgAge:
+  - 56 . 5
+  ConclusionComment:
+  - In conclusion , a more efficient B - cell insulin processing provides further
+    evidence that vildagliptin treatment ameliorates abnormal B - cell function in
+    patients with type 2 diabetes .
+  DiffGroupAbsValue:
+  - '- 0 . 007'
+  Journal:
+  - Horm Metab Res .
+  NumberPatientsArm:
+  - '26'
+  - '29'
+  NumberPatientsCT:
+  - Fifty - five
+  ObjectiveDescription:
+  - The aim of this study was to evaluate the contribution of insulin processing to
+    the improved meal - related B - cell function previously shown with the DPP -
+    4 inhibitor vildagliptin .
+  ObservedResult:
+  - was significantly reduced
+  - both in the fasting state ( p = 0 . 023 ) and postprandially ( p = 0 . 004 )
+  PMID:
+  - '17992639'
+  PValueChangeValue:
+  - p = 0 . 037
+  Precondition:
+  - patients with type 2 diabetes ( 56 . 5 + / - 1 . 5 years ; BMI = 29 . 6 + / -
+    0 . 5 kg / m ( 2 ) ; FPG = 9 . 9 + / - 0 . 2
+  PublicationYear:
+  - '2007'
+  PvalueDiff:
+  - p = 0 . 052
+  - p = 0 . 004
+  - p = 0 . 023
+  SdDevChangeValue:
+  - 0 . 008
+  Title:
+  - Improved meal - related insulin processing contributes to the enhancement of B
+    - cell function by the DPP - 4 inhibitor vildagliptin in patients with type 2
+    diabetes .
+- Abstract ID: '22672586'
+  AllocationRatio:
+  - '1 : 1'
+  Author:
+  - Johnson - Levonas AO
+  - Kaufman KD
+  - Shentu Y
+  - Yang W
+  - Engel SS
+  - Alba M
+  - Li Z
+  - Guan Y
+  - Goldstein BJ
+  ConclusionComment:
+  - The addition of sitagliptin 100 mg to ongoing metformin therapy significantly
+    improved glycemic control and was generally well tolerated in Chinese patients
+    with T2DM who had inadequate glycemic control on metformin alone .
+  DiffGroupAbsValue:
+  - 0 . 5kg
+  DoseValue:
+  - '100'
+  Frequency:
+  - q . d .
+  Journal:
+  - J Diabetes
+  MinAge:
+  - '25'
+  NumberPatientsCT:
+  - '395'
+  ObjectiveDescription:
+  - in Chinese patients with type 2 diabetes ( T2DM ) who failed to achieve adequate
+    glycemic control with metformin monotherapy .
+  - The present study was conducted to evaluate the efficacy , safety and tolerability
+    of sitagliptin added to ongoing metformin therapy
+  ObservedResult:
+  - no change
+  - small decrease
+  PMID:
+  - '22672586'
+  PValueChangeValue:
+  - P < 0 . 001
+  Precondition:
+  - Chinese patients with type 2 diabetes ( T2DM ) who failed to achieve adequate
+    glycemic control with metformin monotherapy
+  PublicationYear:
+  - '2012'
+  PvalueDiff:
+  - P = 0 . 018
+  Title:
+  - The addition of sitagliptin to ongoing metformin therapy significantly improves
+    glycemic control in Chinese patients with type 2 diabetes .
+- Abstract ID: '25208756'
+  AllocationRatio:
+  - '2 : 1'
+  Author:
+  - Weissman PN
+  - Carr MC
+  - Perry C
+  - Stewart M
+  - Cirkel DT
+  - Pratley R
+  - Ye J
+  CTDesign:
+  - non - inferiority
+  ConclusionComment:
+  - Albiglutide was non - inferior to insulin glargine at reducing HbA1c at week 52
+    , with modest weight loss and less hypoglycaemia .
+  - Both drugs were well tolerated .
+  - Albiglutide may be considered an alternative to insulin glargine in this patient
+    population .
+  ConfIntervalDiff:
+  - 95 % CI - 0 . 04 % , 0 . 27 %
+  - 95 % CI - 3 . 20 , - 2 . 02
+  DiffGroupAbsValue:
+  - 0 . 11
+  - '- 2 . 61'
+  DoseDescription:
+  - Doses of each medication were adjusted on the basis of the glycaemic response
+    .
+  DoseValue:
+  - '10'
+  - '30'
+  Frequency:
+  - once a day
+  - once a week
+  Journal:
+  - Diabetologia
+  MinAge:
+  - '18'
+  NumberPatientsArm:
+  - '241'
+  - '504'
+  NumberPatientsCT:
+  - '779'
+  ObjectiveDescription:
+  - compare the efficacy and safety of once - weekly albiglutide with once - daily
+    insulin glargine ( A21Gly , B31Arg , B32Arg human insulin )
+  - in patients with type 2 diabetes inadequately controlled on metformin with or
+    without sulfonylurea .
+  ObservedResult:
+  - decreased
+  - increased
+  PMID:
+  - '25208756'
+  PercentageAffected:
+  - 17 . 5
+  - 27 . 4
+  Precondition:
+  - patients with type 2 diabetes inadequately controlled with metformin with or without
+    sulfonylurea
+  - "Patients aged \u2265 18 years with type 2 diabetes treated with metformin"
+  PublicationYear:
+  - '2014'
+  PvalueDiff:
+  - p = 0 . 0086
+  - p < 0 . 0001
+  - p = 0 . 0377
+  ResultMeasuredValue:
+  - 7 . 62
+  - 7 . 55
+  SdDevBL:
+  - 0 . 90
+  - 0 . 95
+  SdDevResValue:
+  - 1 . 12
+  - 1 . 04
+  TimePoint:
+  - week 52
+  Title:
+  - 'HARMONY 4 : randomised clinical trial comparing once - weekly albiglutide and
+    insulin glargine in patients with type 2 diabetes inadequately controlled with
+    metformin with or without sulfonylurea .'
+- Abstract ID: '23250357'
+  Author:
+  - Smushkin G
+  - Cobelli C
+  - Law JH
+  - Sathananthan M
+  - Zinsmeister AR
+  - Dalla Man C
+  - Vella A
+  - Rizza RA
+  - Piccinini F
+  Journal:
+  - Diabetes
+  NumberPatientsCT:
+  - Thirty - eight
+  ObjectiveDescription:
+  - We designed an experiment to examine the effect of bile acid sequestration with
+    Colesevelam on fasting and postprandial glucose metabolism in type 2 diabetes
+    .
+  - To do so , we tested the hypothesis that Colesevelam increases the disposition
+    index ( DI ) , and this increase is associated with increased glucagon - like
+    peptide - 1 ( GLP - 1 ) concentrations .
+  PMID:
+  - '23250357'
+  Precondition:
+  - subjects with type 2 diabetes
+  - eight subjects on metformin monotherapy were studied
+  PublicationYear:
+  - '2013'
+  ResultMeasuredValue:
+  - 6 . 6
+  - 2 , 896
+  - 5 , 817
+  SdDevBL:
+  - '138'
+  - 0 . 2
+  - '204'
+  SdDevResValue:
+  - '127'
+  - 0 . 2
+  - '204'
+  Title:
+  - The effect of a bile acid sequestrant on glucose metabolism in subjects with type
+    2 diabetes .
+- Abstract ID: '29246950'
+  AllocationRatio:
+  - '1 : 1'
+  Author:
+  - Ahmann AJ
+  - Aroda VR
+  - Capehorn M
+  - Henkel E
+  - Dotta F
+  - Holst AG
+  - Lingvay I
+  - Charpentier G
+  - Annett MP
+  ConclusionComment:
+  - Semaglutide 1 . 0 mg was superior to exenatide ER 2 . 0 mg in improving glycemic
+    control and reducing body weight after 56 weeks of treatment ; the drugs had comparable
+    safety profiles .
+  - These results indicate that semaglutide treatment is highly effective for subjects
+    with type 2 diabetes who are inadequately controlled on oral antidiabetic drugs
+    .
+  ConfIntervalDiff:
+  - 95 % CI - 0 . 80 , - 0 . 44
+  - 95 % CI - 4 . 58 , - 2 . 98
+  DiffGroupAbsValue:
+  - '- 0 . 62'
+  - '- 3 . 78'
+  DoseValue:
+  - 1 . 0
+  - 2 . 0
+  Frequency:
+  - Once - Weekly
+  Journal:
+  - Diabetes Care
+  NumberPatientsCT:
+  - '813'
+  ObjectiveDescription:
+  - To compare the efficacy and safety of once - weekly semaglutide 1 . 0 mg s . c
+    . with exenatide extended release ( ER ) 2 . 0 mg s . c . in subjects with type
+    2 diabetes .
+  PMID:
+  - '29246950'
+  PercentageAffected:
+  - '40'
+  - '67'
+  - 41 . 8
+  - 1 . 2
+  - 22 . 0
+  - 33 . 3
+  Precondition:
+  - subjects with type 2 diabetes taking oral antidiabetic drugs
+  PublicationYear:
+  - '2018'
+  PvalueDiff:
+  - P < 0 . 0001
+  - P < 0 . 0001
+  Title:
+  - 'Efficacy and Safety of Once - Weekly Semaglutide Versus Exenatide ER in Subjects
+    With Type 2 Diabetes ( SUSTAIN 3 ) : A 56 - Week , Open - Label , Randomized Clinical
+    Trial .'
+- Abstract ID: '27740719'
+  AllocationRatio:
+  - '1 : 1'
+  Author:
+  - Shankar RR
+  - Engel SS
+  - Bao Y
+  - Ma J
+  - Hu J
+  - Wu F
+  - Jia W
+  - Peng Y
+  - Han P
+  - Xu L
+  ConclusionComment:
+  - "After 24 weeks , sitagliptin added to stable insulin therapy ( \xB1 metformin\
+    \ ) was generally well tolerated and improved glycemic control in Chinese patients\
+    \ with type 2 diabetes mellitus ."
+  DoseValue:
+  - '100'
+  Frequency:
+  - once daily
+  Journal:
+  - J Diabetes Investig .
+  NumberAffected:
+  - '51'
+  - '64'
+  NumberPatientsCT:
+  - '467'
+  ObjectiveDescription:
+  - We evaluated the tolerability and efficacy of the addition of sitagliptin in Chinese
+    patients with type 2 diabetes mellitus receiving stable insulin therapy alone
+    or in combination with metformin .
+  ObservedResult:
+  - Neither group had a significant change from baseline in bodyweight .
+  PMID:
+  - '27740719'
+  PercentageAffected:
+  - '16'
+  - '8'
+  - 21 . 9
+  - 27 . 4
+  Precondition:
+  - Chinese patients with type 2 diabetes mellitus receiving stable insulin therapy
+    alone or in combination with metformin
+  - "patients with inadequate glycemic control on insulin ( glycated hemoglobin [\
+    \ HbA1c ] \u2265 7 . 5 % and \u2264 11 % )"
+  PublicationYear:
+  - '2017'
+  PvalueDiff:
+  - P < 0 . 001
+  - P = 0 . 013
+  - P < 0 . 001
+  TimePoint:
+  - week 24
+  Title:
+  - Sitagliptin added to stable insulin therapy with or without metformin in Chinese
+    patients with type 2 diabetes .
+- Abstract ID: '25036533'
+  Author:
+  - Klein DJ
+  - Arslanian S
+  - Hale PM
+  - Jacobsen LV
+  - Battelino T
+  - Chatterjee DJ
+  AvgAge:
+  - 14 . 8
+  ConclusionComment:
+  - Liraglutide was well tolerated in youth with T2D , with safety , tolerability
+    , and pharmacokinetic profiles similar to profiles in adults .
+  DoseDescription:
+  - Starting at 0 . 3 mg / day , doses were escalated weekly to 0 . 6 , 0 . 9 , 1
+    . 2 , and 1 . 8 mg / day
+  Frequency:
+  - day
+  Journal:
+  - Diabetes Technol Ther .
+  MinAge:
+  - '10'
+  NumberPatientsArm:
+  - '7'
+  - '14'
+  ObjectiveDescription:
+  - The safety , tolerability , pharmacokinetics , and pharmacodynamics of liraglutide
+    once daily in youth ( 10 - 17 years old ) with T2D were investigated in a randomized
+    , double - blind , placebo - controlled trial .
+  ObservedResult:
+  - No serious adverse events
+  - were most common at lower liraglutide doses during dose escalation .
+  PMID:
+  - '25036533'
+  Precondition:
+  - youth
+  - Youth treated with diet / exercise alone or with metformin and having a hemoglobin
+    A1c ( HbA1c ) level of 6 . 5 - 11 %
+  PublicationYear:
+  - '2014'
+  PvalueDiff:
+  - P = 0 . 0007
+  - P = 0 . 9703
+  ResultMeasuredValue:
+  - '12'
+  - 1 . 7
+  TimePoint:
+  - 5 weeks
+  Title:
+  - 'Liraglutide '' s safety , tolerability , pharmacokinetics , and pharmacodynamics
+    in pediatric type 2 diabetes : a randomized , double - blind , placebo - controlled
+    trial .'
+- Abstract ID: '15677776'
+  Author:
+  - Lewin A
+  - Hollander P
+  - Bode B
+  - Hu P
+  - Garber A
+  - Allen E
+  - Gabbay RA
+  ConclusionComment:
+  - In subjects with type 2 diabetes poorly controlled on OADs , initiating insulin
+    therapy with twice - daily BIAsp 70 / 30 was more effective in achieving HbA (
+    1c ) targets than once - daily glargine , especially in subjects with HbA ( 1c
+    ) > 8 . 5 % .
+  DoseDescription:
+  - titrated to target blood glucose ( 80 - 110 mg / dl ) by algorithm - directed
+    titration
+  DoseValue:
+  - 2 , 550
+  - 5 - 6
+  - 10 - 12
+  Frequency:
+  - once - daily
+  - twice daily
+  Journal:
+  - Diabetes Care
+  NumberPatientsCT:
+  - '233'
+  ObjectiveDescription:
+  - Safety and efficacy of biphasic insulin aspart 70 / 30 ( BIAsp 70 / 30 , prebreakfast
+    and presupper ) were compared with once - daily insulin glargine in type 2 diabetic
+    subjects inadequately controlled on oral antidiabetic drugs ( OADs ) .
+  PMID:
+  - '15677776'
+  PercentageAffected:
+  - '28'
+  - '66'
+  - '42'
+  - '40'
+  Precondition:
+  - insulin - naive patients with HbA ( 1c ) values > / = 8 . 0 % on > 1 , 000 mg
+    / day metformin alone or in combination with other OADs
+  PublicationYear:
+  - '2005'
+  PvalueDiff:
+  - P < 0 . 01
+  - P < 0 . 01
+  - P < 0 . 05
+  - P < 0 . 05
+  - P < 0 . 001
+  - P < 0 . 05
+  - P < 0 . 01
+  ResultMeasuredValue:
+  - 6 . 91
+  - 7 . 41
+  - 3 . 4
+  - 0 . 7
+  - 78 . 5
+  - 51 . 3
+  SubGroupDescription:
+  - subjects with baseline HbA ( 1c ) > 8 . 5 %
+  Title:
+  - 'Initiating insulin therapy in type 2 Diabetes : a comparison of biphasic and
+    basal insulin analogs .'
+- Abstract ID: '19821654'
+  Author:
+  - Kalra S
+  - Khutsoane DT
+  - Strojek K
+  - Thomsen HF
+  - "Smahelov \xE1 A"
+  - Pesic M
+  - Bebakar WM
+  CTDesign:
+  - treat - to - target
+  ConclusionComment:
+  - With respect to HbA ( 1c ) , BIAsp 30 fulfilled the statistical criteria for non
+    - inferiority and superiority to insulin glargine and , according to pre - defined
+    criteria , the improvements in HbA ( 1c ) are considered clinically equivalent
+    .
+  - Subjects had an increased risk of minor nocturnal hypoglycemia with BIAsp 30 .
+  - There were no differences in treatment satisfaction between the two groups .
+  ConfIntervalDiff:
+  - 95 % CI [ - 0 . 30 ; - 0 . 02 ]
+  - 95 % CI [ - 1 . 02 ; - 0 . 03 ]
+  - 95 % CI [ - 1 . 25 ; - 0 . 31 ]
+  - 95 % CI [ 1 . 34 ; 4 . 34 ]
+  DiffGroupAbsValue:
+  - '- 0 . 16'
+  - '- 0 . 78'
+  - '- 0 . 52'
+  Frequency:
+  - once daily
+  Journal:
+  - Curr Med Res Opin .
+  NumberAffected:
+  - three
+  NumberPatientsCT:
+  - '480'
+  ObjectiveDescription:
+  - To assess the efficacy and safety of biphasic insulin aspart 70 / 30 ( BIAsp 30
+    ) and insulin glargine , administered once daily in subjects with type 2 diabetes
+    inadequately controlled with oral anti - diabetic drugs .
+  ObservedResult:
+  - overall hypoglycemia rates were low
+  PMID:
+  - '19821654'
+  Precondition:
+  - subjects with type 2 diabetes inadequately controlled with oral anti - diabetic
+    drugs
+  - "insulin - na \xEF ve subjects"
+  PublicationYear:
+  - '2009'
+  PvalueDiff:
+  - p = 0 . 029
+  - p = 0 . 04
+  - p < 0 . 01
+  - p = 0 . 003
+  ResultMeasuredValue:
+  - 7 . 3
+  - 7 . 1
+  - 1 . 1
+  - 0 . 5
+  TimePoint:
+  - end of treatment
+  - post - dinner
+  - bedtime
+  Title:
+  - 'Once - daily initiation with biphasic insulin aspart 30 versus insulin glargine
+    in patients with type 2 diabetes inadequately controlled with oral drugs : an
+    open - label , multinational RCT .'
+- Abstract ID: '23116881'
+  Author:
+  - Fonseca V
+  - Kaufman KD
+  - Golm GT
+  - Morgan JD 2nd
+  - Goldstein BJ
+  - Shentu Y
+  - Johnson - Levonas AO
+  - Steinberg H
+  - Staels B
+  ConclusionComment:
+  - In this 26 - week study , addition of sitagliptin to combination therapy with
+    metformin and pioglitazone improved glycemic control and was generally well tolerated
+    .
+  DiffGroupAbsValue:
+  - '- 0 . 8'
+  DoseValue:
+  - '100'
+  Frequency:
+  - day
+  Journal:
+  - J Diabetes Complications
+  NumberAffected:
+  - '7'
+  - '6'
+  - Two
+  NumberPatientsArm:
+  - '156'
+  - '157'
+  NumberPatientsCT:
+  - '313'
+  ObjectiveDescription:
+  - "To assess efficacy and safety of sitagliptin , a dipeptidyl peptidase - 4 inhibitor\
+    \ , in combination therapy with metformin ( \u2265 1500 mg / day ) and pioglitazone\
+    \ ( \u2265 30 mg / day )"
+  - "in patients with type 2 diabetes ( T2DM ) with inadequate glycemic control (\
+    \ hemoglobin A1c [ HbA1c ] \u2265 7 . 5 % and \u2264 11 % ) ."
+  PMID:
+  - '23116881'
+  PValueChangeValue:
+  - P < . 001
+  PercentageAffected:
+  - 4 . 5
+  - 3 . 8
+  Precondition:
+  - ongoing metformin and pioglitazone combination therapy
+  - "patients with type 2 diabetes ( T2DM ) with inadequate glycemic control ( hemoglobin\
+    \ A1c [ HbA1c ] \u2265 7 . 5 % and \u2264 11 % )"
+  PublicationYear:
+  - '2013'
+  PvalueDiff:
+  - P < . 001
+  - P = . 786
+  SubGroupDescription:
+  - "patients with baseline HbA1c \u2265 9 . 0 %"
+  Title:
+  - Efficacy and safety of sitagliptin added to ongoing metformin and pioglitazone
+    combination therapy in a randomized , placebo - controlled , 26 - week trial in
+    patients with type 2 diabetes .
+- Abstract ID: '30019498'
+  Author:
+  - Scott R
+  - Morgan J
+  - Kaufman KD
+  - Lam RLH
+  - O ' Neill EA
+  - Zimmer Z
+  - Raji A
+  - Engel SS
+  ConclusionComment:
+  - "In patients with type 2 diabetes , mild renal insufficiency and inadequate glycaemic\
+    \ control on metformin \xB1 sulfonylurea , sitagliptin treatment resulted in greater\
+    \ improvement in glycaemic control"
+  - compared with dapagliflozin and was generally well tolerated .
+  ConfIntervalDiff:
+  - '- 0 . 26 , - 0 . 04'
+  Country:
+  - New Zealand
+  DiffGroupAbsValue:
+  - '- 0 . 15'
+  DoseDescription:
+  - 5 mg titrated to 10 mg
+  DoseValue:
+  - '100'
+  Frequency:
+  - once daily
+  Journal:
+  - Diabetes Obes Metab .
+  NumberPatientsArm:
+  - '307'
+  - '306'
+  ObjectiveDescription:
+  - To compare the efficacy and safety of the dipeptidyl peptidase - 4 inhibitor sitagliptin
+    with the sodium - glucose transporter - 2 inhibitor dapagliflozin in patients
+    with type 2 diabetes and mild renal insufficiency .
+  ObservedResult:
+  - No meaningful between - group difference was observed in a pre - specified analysis
+    of 2 - hour incremental postprandial glucose excursion .
+  - ) was notable for a lower incidence of drug - related AEs with sitagliptin compared
+    with dapagliflozin
+  PMID:
+  - '30019498'
+  PercentageAffected:
+  - '27'
+  - '43'
+  Precondition:
+  - patients with type 2 diabetes and mild renal insufficiency
+  - "Patients with HbA1c \u2265 7 . 0 to \u2264 9 . 5 % ( \u2265 53 to \u2264 80 \
+    \ mmol / mol ) and estimated glomerular filtration rate \u2265 60 to < 90  mL\
+    \ / min / 1 . 73m2 on metformin ( \u2265 1500  mg / d ) \xB1 sulfonylurea"
+  PublicationYear:
+  - '2018'
+  PvalueDiff:
+  - P = 0 . 006
+  TimePoint:
+  - 24  weeks
+  Title:
+  - 'A randomized clinical trial of the efficacy and safety of sitagliptin compared
+    with dapagliflozin in patients with type 2 diabetes mellitus and mild renal insufficiency
+    : The CompoSIT - R study .'
+- Abstract ID: '21781152'
+  Author:
+  - Owens DR
+  - Woerle HJ
+  - Swallow R
+  - Dugi KA
+  ConclusionComment:
+  - In patients with Type 2 diabetes , adding linagliptin to metformin given in combination
+    with a sulphonylurea significantly improved glycaemic control and this was well
+    tolerated .
+  - Linagliptin could provide a valuable treatment option for individuals with inadequate
+    glycaemic control despite ongoing combination therapy with metformin and a sulphonylurea
+    .
+  ConfIntervalDiff:
+  - 95 % CI - 8 to - 6 mmol / mol ( - 0 . 73 to - 0 . 50 %
+  - 95 % CI - 1 . 0 to - 0 . 4
+  DiffGroupAbsValue:
+  - '- 0 . 62'
+  - '- 0 . 7'
+  DoseValue:
+  - '5'
+  Frequency:
+  - once daily
+  Journal:
+  - Diabet Med .
+  NumberPatientsCT:
+  - '1058'
+  ObjectiveDescription:
+  - in persons with Type 2 diabetes mellitus inadequately controlled [ HbA ( 1c )
+    53 - 86 mmol / mol ( 7 . 0 - 10 . 0 % ) ] by metformin and sulphonylurea combination
+    treatment .
+  ObservedResult:
+  - "Improvements in homeostasis model assessment of \u03B2- cell function were seen\
+    \ with linagliptin"
+  PMID:
+  - '21781152'
+  PValueChangeValue:
+  - P < 0 . 001
+  PercentageAffected:
+  - 8 . 1
+  - 1 . 5
+  - 2 . 4
+  - 16 . 7
+  - 10 . 3
+  - 2 . 7
+  - 4 . 8
+  Precondition:
+  - persons with Type 2 diabetes mellitus inadequately controlled [ HbA ( 1c ) 53
+    - 86 mmol / mol ( 7 . 0 - 10 . 0 % ) ] by metformin and sulphonylurea combination
+    treatment
+  PublicationYear:
+  - '2011'
+  PvalueDiff:
+  - P < 0 . 0001
+  - P < 0 . 0001
+  - P < 0 . 0001
+  SubGroupDescription:
+  - "participants with baseline HbA ( 1c ) \u2265 53 mmol / mol ( \u2265 7 . 0 % )"
+  - participants experiencing hypoglycaemic episodes
+  TimePoint:
+  - week 24
+  Title:
+  - 'Efficacy and safety of linagliptin in persons with type 2 diabetes inadequately
+    controlled by a combination of metformin and sulphonylurea : a 24 - week randomized
+    study .'
+- Abstract ID: '29110647'
+  Author:
+  - Latham M
+  - O ' Neill EA
+  - Round E
+  - Engel SS
+  - Suryawanshi S
+  - Lee SH
+  - Lai E
+  - Kaufman KD
+  - Gantz I
+  - Ceesay P
+  ConclusionComment:
+  - In patients with T2D and inadequate glycemic control on dual therapy with metformin
+    and glimepiride , compared with placebo , once - weekly omarigliptin provided
+    greater improvement in glycemic control and was generally well tolerated .
+  ConfIntervalDiff:
+  - '- 1 . 4 , - 0 . 4'
+  DiffGroupAbsValue:
+  - '- 0 . 61'
+  - '- 0 . 9'
+  DoseValue:
+  - '25'
+  Frequency:
+  - once - weekly
+  Journal:
+  - BMC Endocr Disord .
+  NumberPatientsArm:
+  - '154'
+  - '153'
+  ObjectiveDescription:
+  - The purpose of this trial was to assess the efficacy and safety of adding omarigliptin
+    to the treatment regimen of patients with T2D inadequately controlled by dual
+    therapy with metformin and glimepiride .
+  ObservedResult:
+  - The proportion of patients achieving glycemic goals
+  - was higher in the omarigliptin group relative to the placebo group
+  PMID:
+  - '29110647'
+  PercentageAffected:
+  - 8 . 5
+  - 10 . 5
+  Precondition:
+  - patients with type 2 diabetes mellitus inadequately controlled by glimepiride
+    and metformin
+  PublicationYear:
+  - '2017'
+  PvalueDiff:
+  - p < 0 . 001
+  TimePoint:
+  - baseline
+  Title:
+  - A randomized , placebo - controlled clinical trial evaluating the safety and efficacy
+    of the once - weekly DPP - 4 inhibitor omarigliptin in patients with type 2 diabetes
+    mellitus inadequately controlled by glimepiride and metformin .
+- Abstract ID: '24199686'
+  Author:
+  - Lukashevich V
+  - Del Prato S
+  - Kothny W
+  - Araga M
+  ConclusionComment:
+  - Vildagliptin significantly improved glycaemic control in patients with T2DM inadequately
+    controlled with metformin plus glimepiride combination .
+  - The addition of vildagliptin was well tolerated with low risk of hypoglycaemia
+    and weight gain .
+  - "This makes vildagliptin an attractive treatment option for patients failing on\
+    \ metformin plus SU particularly in patients with baseline HbA1c \u2264 8 % ."
+  DiffGroupAbsValue:
+  - '- 0 . 76'
+  - '- 1 . 13'
+  - '- 0 . 97'
+  DoseValue:
+  - '50'
+  Frequency:
+  - bid
+  Journal:
+  - Diabetes Obes Metab .
+  NumberPatientsArm:
+  - '158'
+  - '160'
+  ObjectiveDescription:
+  - The broadly used combination of metformin and sulphonylurea ( SU ) often fails
+    to bring patients to glycaemic goal .
+  - This study assessed the efficacy and safety of vildagliptin as add - on therapy
+    to metformin plus glimepiride combination in patients with type 2 diabetes mellitus
+    ( T2DM ) who had inadequate glycaemic control .
+  PMID:
+  - '24199686'
+  PercentageAffected:
+  - 28 . 3
+  - 5 . 6
+  - 13 . 9
+  - 38 . 6
+  - 5 . 1
+  - 1 . 9
+  PublicationYear:
+  - '2014'
+  PvalueDiff:
+  - p < 0 . 001
+  - p < 0 . 001
+  - p < 0 . 001
+  - p < 0 . 001
+  - p = 0 . 014
+  SubGroupDescription:
+  - "patients with baseline HbA1c \u2264 8 %"
+  Title:
+  - Efficacy and safety of vildagliptin in patients with type 2 diabetes mellitus
+    inadequately controlled with dual combination of metformin and sulphonylurea .
