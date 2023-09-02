@@ -47,9 +47,14 @@ def load_data(batch_size=32):
     with open(TEST_DATA_PATH, "r") as test_file:
         test_dataset = json.load(test_file)
 
-    train_sentences, train_labels, test_sentences, test_labels = preprocess_data(
-        train_dataset, test_dataset
-    )
+    (
+        train_sentences,
+        train_labels,
+        test_sentences,
+        test_labels,
+        word_to_id,
+        label_to_id,
+    ) = preprocess_data(train_dataset, test_dataset)
 
     train_loader, test_loader = get_dataloaders(
         train_sentences, train_labels, test_sentences, test_labels, batch_size
@@ -57,7 +62,7 @@ def load_data(batch_size=32):
 
     print("Data loaded.")
 
-    return train_loader, test_loader
+    return train_loader, test_loader, word_to_id, label_to_id
 
 
 def preprocess_data(train_dataset, test_dataset):
@@ -91,6 +96,8 @@ def preprocess_data(train_dataset, test_dataset):
         train_labels_int,
         test_sentences_padded,
         test_labels_int,
+        word_to_id,
+        label_to_id,
     )
 
 
@@ -152,10 +159,10 @@ def convert_and_pad_data(
     ]
 
     # Convert labels to their corresponding integer values
-    train_labels_int = [
+    train_labels_padded = [
         [label_to_id[label] for label in label_list] for label_list in train_labels
     ]
-    test_labels_int = [
+    test_labels_padded = [
         [label_to_id[label] for label in label_list] for label_list in test_labels
     ]
 
@@ -173,29 +180,41 @@ def convert_and_pad_data(
         for sentence in test_sentences_int
     ]
 
+    # Pad the labels to the same max sequence length as the sentences
+    train_labels_padded = [
+        label_list + [label_to_id[PAD]] * (max_sequence_length - len(label_list))
+        for label_list in train_labels_padded
+    ]
+    test_labels_padded = [
+        label_list + [label_to_id[PAD]] * (max_sequence_length - len(label_list))
+        for label_list in test_labels_padded
+    ]
+
     print("Data converted and padded.")
     print("Max sequence length: ", max_sequence_length)
 
     return (
         train_sentences_padded,
-        train_labels_int,
+        train_labels_padded,
         test_sentences_padded,
-        test_labels_int,
+        test_labels_padded,
     )
 
 
 def get_dataloaders(
     train_sentences_padded,
-    train_labels_int,
+    train_labels_padded,
     test_sentences_padded,
-    test_labels_int,
+    test_labels_padded,
     batch_size,
 ):
     # Convert data into PyTorch tensors and set up dataloaders
     train_sentences_tensor = torch.tensor(train_sentences_padded)
     test_sentences_tensor = torch.tensor(test_sentences_padded)
-    train_dataset = ClinicalTrialsDataset(train_sentences_tensor, train_labels_int)
-    test_dataset = ClinicalTrialsDataset(test_sentences_tensor, test_labels_int)
+    train_labels_tensor = torch.tensor(train_labels_padded)
+    test_labels_tensor = torch.tensor(test_labels_padded)
+    train_dataset = ClinicalTrialsDataset(train_sentences_tensor, train_labels_tensor)
+    test_dataset = ClinicalTrialsDataset(test_sentences_tensor, test_labels_tensor)
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     test_loader = DataLoader(test_dataset, batch_size=batch_size, shuffle=False)
 
