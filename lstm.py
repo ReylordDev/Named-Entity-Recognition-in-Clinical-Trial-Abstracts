@@ -1,5 +1,7 @@
 from data import load_data, PAD
-from metric import f1_score
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score
+from torch.utils.data import DataLoader
 import torch.nn as nn
 import torch
 import wandb
@@ -35,12 +37,23 @@ class LSTM_Model(nn.Module):
 def train_model(
     model,
     train_loader,
-    test_loader,
     optimizer,
     loss_function,
     device,
-    num_epochs=5,
+    num_epochs,
+    val_split=0.2,
 ):
+    # Overriding the train loader in a sketchy makeshift fix
+    train_dataset = train_loader.dataset
+    print(f"Train dataset size: {len(train_dataset)}")
+
+    # Split the training dataset into training and validation
+    train_data, val_data = train_test_split(train_dataset, test_size=val_split)
+    train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
+    val_loader = DataLoader(val_data, batch_size=32, shuffle=False)
+
+    wandb.watch(model, loss_function, log="all", log_freq=10)
+
     for epoch in range(num_epochs):
         # Training
         model.train()
@@ -53,7 +66,7 @@ def train_model(
             # Forward pass
             outputs = model(sentences)
             outputs = outputs.view(-1, outputs.shape[-1])
-            labels = torch.tensor(labels).view(-1)
+            labels = labels.clone().detach().to(device).view(-1)
 
             # Compute loss, gradients, and update parameters
             loss = loss_function(outputs, labels)
@@ -68,18 +81,59 @@ def train_model(
         model.eval()
         all_predictions = []
         all_true_labels = []
-        for sentences, labels in test_loader:
+        for sentences, labels in val_loader:
+            sentences, labels = sentences.to(device), labels.to(device)
             with torch.no_grad():
                 outputs = model(sentences)
-            predictions = torch.argmax(outputs, dim=-1).tolist()
+            predictions = torch.argmax(outputs, dim=-1).cpu().numpy().tolist()
+            true_labels = labels.cpu().numpy().tolist()
             all_predictions.extend(predictions)
-            all_true_labels.extend(labels)
+            all_true_labels.extend(true_labels)
 
-        validation_f1 = f1_score(all_predictions, all_true_labels)
+        # Flatten lists for metric computation
+        flat_predictions = [label for sublist in all_predictions for label in sublist]
+        flat_true_labels = [label for sublist in all_true_labels for label in sublist]
+
+        validation_f1 = f1_score(flat_predictions, flat_true_labels, average="micro")
 
         print(f"Epoch {epoch+1}/{num_epochs}")
         print(f"Training loss: {average_train_loss:.4f}")
         print(f"Validation F1 Score: {validation_f1:.4f}\n")
+        wandb.log(
+            {
+                "epoch": epoch + 1,
+                "train_loss": average_train_loss,
+                "val_f1": validation_f1,
+            }
+        )
+
+
+def evaluate_model(model, test_loader, device):
+    """Evaluate the model on the test set."""
+
+    model.eval()  # Set the model to evaluation mode
+    all_predictions = []
+    all_true_labels = []
+
+    for sentences, labels in test_loader:
+        sentences, labels = sentences.to(device), labels.to(device)
+
+        with torch.no_grad():
+            outputs = model(sentences)
+
+        predictions = torch.argmax(outputs, dim=-1).cpu().numpy().tolist()
+        true_labels = labels.cpu().numpy().tolist()
+
+        all_predictions.extend(predictions)
+        all_true_labels.extend(true_labels)
+
+    # Flatten lists for metric computation
+    flat_predictions = [label for sublist in all_predictions for label in sublist]
+    flat_true_labels = [label for sublist in all_true_labels for label in sublist]
+
+    f1_micro = f1_score(flat_true_labels, flat_predictions, average="micro")
+
+    wandb.log({"test_f1": f1_micro})
 
 
 def main(args=None):
@@ -88,12 +142,13 @@ def main(args=None):
 
     # Initialize wandb
     wandb.init(
-        project="DL-NLP-Final-Project-NER-Neural-Baseline",
+        project="DL-NLP-LSTM",
         config={
             "learning_rate": 0.001,
             "batch_size": 32,
             "embedding_dim": 128,
             "hidden_dim": 256,
+            "epochs": 100,
         },
     )
     config = wandb.config
@@ -117,16 +172,19 @@ def main(args=None):
     )  # Ignore the padding token for loss computation
     optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
 
-    # Train the model for 5 epochs as a baseline
+    # Train the model for config.epochs as a baseline
     train_model(
         model,
         train_loader,
-        test_loader,
         optimizer,
         loss_function,
-        num_epochs=5,
         device=device,
+        num_epochs=config.epochs,
+        val_split=0.2,
     )
+
+    # Evaluate the model on the test set
+    evaluate_model(model, test_loader, device=device)
 
 
 def get_args():
