@@ -33,13 +33,21 @@ class LSTM_Model(nn.Module):
 
 
 def train_model(
-    model, train_loader, test_loader, optimizer, loss_function, num_epochs=5
+    model,
+    train_loader,
+    test_loader,
+    optimizer,
+    loss_function,
+    device,
+    num_epochs=5,
 ):
     for epoch in range(num_epochs):
         # Training
         model.train()
         total_loss = 0
         for sentences, labels in train_loader:
+            sentences, labels = sentences.to(device), labels.to(device)
+
             optimizer.zero_grad()
 
             # Forward pass
@@ -75,6 +83,9 @@ def train_model(
 
 
 def main(args=None):
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
+
     # Initialize wandb
     wandb.init(
         project="DL-NLP-Final-Project-NER-Neural-Baseline",
@@ -97,6 +108,7 @@ def main(args=None):
 
     # Initialize the model
     model = LSTM_Model(len(word_to_id), len(label_to_id))
+    model.to(device)
     print(model)
 
     # Define loss function and optimizer
@@ -107,17 +119,23 @@ def main(args=None):
 
     # Train the model for 5 epochs as a baseline
     train_model(
-        model, train_loader, test_loader, optimizer, loss_function, num_epochs=5
+        model,
+        train_loader,
+        test_loader,
+        optimizer,
+        loss_function,
+        num_epochs=5,
+        device=device,
     )
 
 
 def get_args():
     parser = argparse.ArgumentParser(description="Train an LSTM model for NER.")
     parser.add_argument(
-        "--train_path", type=str, required=True, help="Path to the training dataset."
+        "--train_path", type=str, required=False, help="Path to the training dataset."
     )
     parser.add_argument(
-        "--test_path", type=str, required=True, help="Path to the test dataset."
+        "--test_path", type=str, required=False, help="Path to the test dataset."
     )
     return parser.parse_args()
 
