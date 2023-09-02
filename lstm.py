@@ -3,6 +3,7 @@ from metric import f1_score
 import torch.nn as nn
 import torch
 import wandb
+import argparse
 
 
 class LSTM_Model(nn.Module):
@@ -73,7 +74,7 @@ def train_model(
         print(f"Validation F1 Score: {validation_f1:.4f}\n")
 
 
-def main():
+def main(args=None):
     # Initialize wandb
     wandb.init(
         project="DL-NLP-Final-Project-NER-Neural-Baseline",
@@ -87,7 +88,12 @@ def main():
     config = wandb.config
 
     # Load data
-    train_loader, test_loader, word_to_id, label_to_id = load_data()
+    if args:
+        train_loader, test_loader, word_to_id, label_to_id = load_data(
+            args.train_path, args.test_path
+        )
+    else:
+        train_loader, test_loader, word_to_id, label_to_id = load_data()
 
     # Initialize the model
     model = LSTM_Model(len(word_to_id), len(label_to_id))
@@ -105,5 +111,17 @@ def main():
     )
 
 
+def get_args():
+    parser = argparse.ArgumentParser(description="Train an LSTM model for NER.")
+    parser.add_argument(
+        "--train_path", type=str, required=True, help="Path to the training dataset."
+    )
+    parser.add_argument(
+        "--test_path", type=str, required=True, help="Path to the test dataset."
+    )
+    return parser.parse_args()
+
+
 if __name__ == "__main__":
-    main()
+    args = get_args()
+    main(args)

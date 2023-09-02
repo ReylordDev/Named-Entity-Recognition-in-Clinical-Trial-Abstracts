@@ -3,8 +3,8 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 from collections import defaultdict
 
-TEST_DATA_PATH = "data/test.json"
 TRAIN_DATA_PATH = "data/train.json"
+TEST_DATA_PATH = "data/test.json"
 PAD = "<PAD>"
 
 
@@ -39,12 +39,14 @@ class ClinicalTrialsDataset(Dataset):
         return self.sentences[idx], self.labels[idx]
 
 
-def load_data(batch_size=32):
+def load_data(
+    train_data_path=TRAIN_DATA_PATH, test_data_path=TEST_DATA_PATH, batch_size=32
+):
     # Load the datasets from the provided JSON files
-    with open(TRAIN_DATA_PATH, "r") as train_file:
+    with open(train_data_path, "r") as train_file:
         train_dataset = json.load(train_file)
 
-    with open(TEST_DATA_PATH, "r") as test_file:
+    with open(test_data_path, "r") as test_file:
         test_dataset = json.load(test_file)
 
     (
