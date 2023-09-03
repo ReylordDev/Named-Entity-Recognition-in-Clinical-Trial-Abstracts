@@ -2,6 +2,7 @@ from data import load_data, PAD
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import f1_score
 from torch.utils.data import DataLoader
+import numpy as np
 import torch.nn as nn
 import torch
 import wandb
@@ -14,12 +15,22 @@ class LSTM_Model(nn.Module):
 
         # Embedding layer to convert words to dense vectors
         self.embedding = nn.Embedding(vocab_size, embedding_dim)
+        nn.init.xavier_uniform_(self.embedding.weight)
 
         # LSTM layer for sequence modeling
         self.lstm = nn.LSTM(embedding_dim, hidden_dim, batch_first=True)
 
+        # Initializing the forget gate bias to 1 (best practice for LSTMs)
+        for names in self.lstm._all_weights:
+            for name in filter(lambda n: "bias" in n, names):
+                bias = getattr(self.lstm, name)
+                n = bias.size(0)
+                start, end = n // 4, n // 2
+                bias.data[start:end].fill_(1.0)
+
         # Dense layer for classification
         self.fc = nn.Linear(hidden_dim, label_size)
+        nn.init.xavier_uniform_(self.fc.weight)
 
     def forward(self, x):
         # Pass input through embedding layer
@@ -39,6 +50,7 @@ def train_model(
     train_loader,
     optimizer,
     loss_function,
+    label_to_id,
     device,
     num_epochs,
     val_split=0.2,
@@ -90,11 +102,14 @@ def train_model(
             all_predictions.extend(predictions)
             all_true_labels.extend(true_labels)
 
-        # Flatten lists for metric computation
-        flat_predictions = [label for sublist in all_predictions for label in sublist]
-        flat_true_labels = [label for sublist in all_true_labels for label in sublist]
+        flat_true_labels = np.array(all_predictions).flatten()
+        flat_pred_labels = np.array(all_true_labels).flatten()
 
-        validation_f1 = f1_score(flat_predictions, flat_true_labels, average="micro")
+        non_pad_indices = flat_true_labels != label_to_id["PAD"]
+        flat_true_labels = flat_true_labels[non_pad_indices]
+        flat_pred_labels = flat_pred_labels[non_pad_indices]
+
+        validation_f1 = f1_score(flat_true_labels, flat_pred_labels, average="micro")
 
         print(f"Epoch {epoch+1}/{num_epochs}")
         print(f"Training loss: {average_train_loss:.4f}")
@@ -108,7 +123,7 @@ def train_model(
         )
 
 
-def evaluate_model(model, test_loader, device):
+def evaluate_model(model, test_loader, label_to_id, device):
     """Evaluate the model on the test set."""
 
     model.eval()  # Set the model to evaluation mode
@@ -127,11 +142,14 @@ def evaluate_model(model, test_loader, device):
         all_predictions.extend(predictions)
         all_true_labels.extend(true_labels)
 
-    # Flatten lists for metric computation
-    flat_predictions = [label for sublist in all_predictions for label in sublist]
-    flat_true_labels = [label for sublist in all_true_labels for label in sublist]
+    flat_true_labels = np.array(all_predictions).flatten()
+    flat_pred_labels = np.array(all_true_labels).flatten()
 
-    f1_micro = f1_score(flat_true_labels, flat_predictions, average="micro")
+    non_pad_indices = flat_true_labels != label_to_id["PAD"]
+    flat_true_labels = flat_true_labels[non_pad_indices]
+    flat_pred_labels = flat_pred_labels[non_pad_indices]
+
+    f1_micro = f1_score(flat_true_labels, flat_pred_labels, average="micro")
 
     wandb.log({"test_f1": f1_micro})
 
@@ -178,13 +196,14 @@ def main(args=None):
         train_loader,
         optimizer,
         loss_function,
+        label_to_id,
         device=device,
         num_epochs=config.epochs,
         val_split=0.2,
     )
 
     # Evaluate the model on the test set
-    evaluate_model(model, test_loader, device=device)
+    evaluate_model(model, test_loader, label_to_id, device=device)
 
 
 def get_args():
