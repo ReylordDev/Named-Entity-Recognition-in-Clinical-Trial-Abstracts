@@ -9,38 +9,48 @@ import wandb
 import argparse
 
 
-class LSTM_Model(nn.Module):
-    def __init__(self, vocab_size, label_size, embedding_dim=128, hidden_dim=256):
-        super(LSTM_Model, self).__init__()
+class FeedForwardNN_Model(nn.Module):
+    def __init__(
+        self,
+        vocab_size,
+        label_size,
+        max_sequence_length,
+        embedding_dim=128,
+        hidden_dim=256,
+    ):
+        super(FeedForwardNN_Model, self).__init__()
 
         # Embedding layer to convert words to dense vectors
         self.embedding = nn.Embedding(vocab_size, embedding_dim)
         nn.init.xavier_uniform_(self.embedding.weight)
 
-        # LSTM layer for sequence modeling
-        self.lstm = nn.LSTM(embedding_dim, hidden_dim, batch_first=True)
+        # # Flattening the sequence
+        # self.flatten = nn.Flatten()
 
-        # Initializing the forget gate bias to 1 (best practice for LSTMs)
-        for names in self.lstm._all_weights:
-            for name in filter(lambda n: "bias" in n, names):
-                bias = getattr(self.lstm, name)
-                n = bias.size(0)
-                start, end = n // 4, n // 2
-                bias.data[start:end].fill_(1.0)
+        # Dense layers with ReLU activations
+        self.fc1 = nn.Linear(embedding_dim, hidden_dim)
+        self.relu1 = nn.ReLU()
+        nn.init.kaiming_uniform_(self.fc1.weight, nonlinearity="relu")
 
-        # Dense layer for classification
-        self.fc = nn.Linear(hidden_dim, label_size)
-        nn.init.xavier_uniform_(self.fc.weight)
+        # You can add more layers if needed using the pattern above
+
+        # Output layer for classification
+        self.fc2 = nn.Linear(hidden_dim, label_size)
+        nn.init.xavier_uniform_(self.fc2.weight)
 
     def forward(self, x):
         # Pass input through embedding layer
         x = self.embedding(x)
 
-        # Pass embeddings through LSTM
-        lstm_out, _ = self.lstm(x)
+        # # Flatten the sequence
+        # x = self.flatten(x)
 
-        # Pass LSTM outputs through dense layer
-        out = self.fc(lstm_out)
+        # Pass through dense layers with ReLU activation
+        x = self.fc1(x)
+        x = self.relu1(x)
+
+        # Pass through output layer
+        out = self.fc2(x)
 
         return out
 
@@ -50,6 +60,7 @@ def train_model(
     train_loader,
     optimizer,
     loss_function,
+    word_to_id,
     label_to_id,
     device,
     num_epochs,
@@ -64,7 +75,10 @@ def train_model(
     train_loader = DataLoader(train_data, batch_size=32, shuffle=True)
     val_loader = DataLoader(val_data, batch_size=32, shuffle=False)
 
-    wandb.watch(model, loss_function, log="all", log_freq=10)
+    id_to_word = {v: k for k, v in word_to_id.items()}
+    id_to_label = {v: k for k, v in label_to_id.items()}
+
+    # wandb.watch(model, loss_function, log="all", log_freq=10)
 
     for epoch in range(num_epochs):
         # Training
@@ -73,11 +87,31 @@ def train_model(
         for sentences, labels in train_loader:
             sentences, labels = sentences.to(device), labels.to(device)
 
+            sentence_ints = sentences[0].cpu().numpy().tolist()
+            sentence = " ".join([id_to_word[id] for id in sentence_ints])
+            labels_ints = labels[0].cpu().numpy().tolist()
+            labels_str = [id_to_label[id] for id in labels_ints]
+            if epoch == num_epochs - 1:
+                print(sentence_ints)
+                print(sentence)
+                print(labels_ints)
+                print(labels_str)
+
             optimizer.zero_grad()
 
             # Forward pass
             outputs = model(sentences)
+
             outputs = outputs.view(-1, outputs.shape[-1])
+            if epoch == num_epochs - 1:
+                outputs_probs = torch.softmax(outputs, dim=-1)
+                most_likely_labels = torch.argmax(outputs_probs, dim=-1)
+                output_labels_ints = most_likely_labels.cpu().detach().numpy().tolist()
+                output_labels = " ".join([id_to_label[id] for id in output_labels_ints])
+                print(output_labels_ints)
+                print(output_labels)
+                exit()
+
             labels = labels.clone().detach().to(device).view(-1)
 
             # Compute loss, gradients, and update parameters
@@ -111,16 +145,17 @@ def train_model(
 
         validation_f1 = f1_score(flat_true_labels, flat_pred_labels, average="micro")
 
-        print(f"Epoch {epoch+1}/{num_epochs}")
-        print(f"Training loss: {average_train_loss:.4f}")
-        print(f"Validation F1 Score: {validation_f1:.4f}\n")
-        wandb.log(
-            {
-                "epoch": epoch + 1,
-                "train_loss": average_train_loss,
-                "val_f1": validation_f1,
-            }
-        )
+        if (epoch + 1) % 20 == 0 or epoch + 1 == num_epochs:
+            print(f"Epoch {epoch+1}/{num_epochs}")
+            print(f"Training loss: {average_train_loss:.4f}")
+            print(f"Validation F1 Score: {validation_f1:.4f}\n")
+            # wandb.log(
+            #     {
+            #         "epoch": epoch + 1,
+            #         "train_loss": average_train_loss,
+            #         "val_f1": validation_f1,
+            #     }
+            # )
 
 
 def evaluate_model(model, test_loader, label_to_id, device):
@@ -151,7 +186,7 @@ def evaluate_model(model, test_loader, label_to_id, device):
 
     f1_micro = f1_score(flat_true_labels, flat_pred_labels, average="micro")
 
-    wandb.log({"test_f1": f1_micro})
+    # wandb.log({"test_f1": f1_micro})
 
 
 def main(args=None):
@@ -159,28 +194,39 @@ def main(args=None):
     print(f"Using device: {device}")
 
     # Initialize wandb
-    wandb.init(
-        project="DL-NLP-Neural-Baseline",
-        config={
-            "learning_rate": 0.001,
-            "batch_size": 32,
-            "embedding_dim": 128,
-            "hidden_dim": 256,
-            "epochs": 100,
-        },
-    )
-    config = wandb.config
+    # wandb.init(
+    #     project="DL-NLP-Neural-Baseline",
+    #     name="feed-forward-baseline-4",
+    #     config={
+    #         "learning_rate": 0.00001,
+    #         "batch_size": 32,
+    #         "embedding_dim": 128,
+    #         "hidden_dim": 256,
+    #         "epochs": 500,
+    #     },
+    # )
+    # config = wandb.config
 
     # Load data
     if args:
-        train_loader, test_loader, word_to_id, label_to_id, _ = load_data(
-            args.train_path, args.test_path
-        )
+        (
+            train_loader,
+            test_loader,
+            word_to_id,
+            label_to_id,
+            max_sequence_length,
+        ) = load_data(args.train_path, args.test_path)
     else:
-        train_loader, test_loader, word_to_id, label_to_id, _ = load_data()
+        (
+            train_loader,
+            test_loader,
+            word_to_id,
+            label_to_id,
+            max_sequence_length,
+        ) = load_data()
 
     # Initialize the model
-    model = LSTM_Model(len(word_to_id), len(label_to_id))
+    model = FeedForwardNN_Model(len(word_to_id), len(label_to_id), max_sequence_length)
     model.to(device)
     print(model)
 
@@ -188,7 +234,8 @@ def main(args=None):
     loss_function = nn.CrossEntropyLoss(
         ignore_index=label_to_id[PAD]
     )  # Ignore the padding token for loss computation
-    optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
+    # optimizer = torch.optim.Adam(model.parameters(), lr=config.learning_rate)
+    optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
     # Train the model for config.epochs as a baseline
     train_model(
@@ -196,9 +243,11 @@ def main(args=None):
         train_loader,
         optimizer,
         loss_function,
+        word_to_id,
         label_to_id,
         device=device,
-        num_epochs=config.epochs,
+        # num_epochs=config.epochs,
+        num_epochs=500,
         val_split=0.2,
     )
 
@@ -207,7 +256,7 @@ def main(args=None):
 
 
 def get_args():
-    parser = argparse.ArgumentParser(description="Train an LSTM model for NER.")
+    parser = argparse.ArgumentParser(description="Train Feed-Forward model for NER.")
     parser.add_argument(
         "--train_path", type=str, required=False, help="Path to the training dataset."
     )

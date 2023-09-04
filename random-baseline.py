@@ -25,17 +25,17 @@ class RandomProbabilisticClassifier:
 def main(args=None):
     # Initialize wandb
     wandb.init(
-        project="DL-NLP-LSTM",
-        name="random-baseline-3",
+        project="DL-NLP-Neural-Baseline",
+        name="random-baseline-4",
     )
 
     # Load data
     if args and args.train_path and args.test_path:
-        train_loader, test_loader, word_to_id, label_to_id = load_data(
+        train_loader, test_loader, word_to_id, label_to_id, _ = load_data(
             args.train_path, args.test_path
         )
     else:
-        train_loader, test_loader, word_to_id, label_to_id = load_data()
+        train_loader, test_loader, word_to_id, label_to_id, _ = load_data()
 
     num_classes = len(label_to_id)
 

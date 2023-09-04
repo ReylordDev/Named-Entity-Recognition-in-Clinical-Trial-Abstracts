@@ -56,6 +56,7 @@ def load_data(
         test_labels,
         word_to_id,
         label_to_id,
+        max_sequence_length,
     ) = preprocess_data(train_dataset, test_dataset)
 
     train_loader, test_loader = get_dataloaders(
@@ -64,7 +65,7 @@ def load_data(
 
     print("Data loaded.")
 
-    return train_loader, test_loader, word_to_id, label_to_id
+    return train_loader, test_loader, word_to_id, label_to_id, max_sequence_length
 
 
 def preprocess_data(train_dataset, test_dataset):
@@ -84,6 +85,7 @@ def preprocess_data(train_dataset, test_dataset):
         train_labels_int,
         test_sentences_padded,
         test_labels_int,
+        max_sequence_length,
     ) = convert_and_pad_data(
         train_sentences,
         train_labels,
@@ -100,6 +102,7 @@ def preprocess_data(train_dataset, test_dataset):
         test_labels_int,
         word_to_id,
         label_to_id,
+        max_sequence_length,
     )
 
 
@@ -144,7 +147,7 @@ def create_vocabulary(train_sentences, train_labels, test_sentences, test_labels
 
     print("Vocabulary and label set created.")
     print("Vocabulary size: ", len(word_to_id))
-    print("Label set size: ", len(label_to_id))
+    print("Label set size: ", len(label_to_id) + 1)  # +1 for the padding token
 
     return word_to_id, label_to_id
 
@@ -200,6 +203,7 @@ def convert_and_pad_data(
         train_labels_padded,
         test_sentences_padded,
         test_labels_padded,
+        max_sequence_length,
     )
 
 
@@ -225,6 +229,34 @@ def get_dataloaders(
     print("Test dataset size: ", len(test_dataset))
 
     return train_loader, test_loader
+
+
+def ids_to_sentences(ids, id_to_word):
+    """
+    Given a tensor of shape [seq_length], returns the corresponding sentence as a string.
+
+    Args:
+    - ids (torch.Tensor): Tensor of shape [seq_length] containing the word ids of the sentence.
+    - id_to_word (dict): Dictionary mapping word ids to words.
+
+    Returns:
+    - str: The sentence corresponding to the given word ids.
+    """
+    return " ".join([id_to_word[id] for id in ids])
+
+
+def ids_to_labels(ids, id_to_label):
+    """
+    Given a tensor of shape [seq_length], returns the corresponding labels as a string.
+
+    Args:
+    - ids (torch.Tensor): Tensor of shape [seq_length] containing the label ids of the sentence.
+    - id_to_label (dict): Dictionary mapping label ids to labels.
+
+    Returns:
+    - str: The labels corresponding to the given label ids.
+    """
+    return " ".join([id_to_label[id] for id in ids])
 
 
 if __name__ == "__main__":
