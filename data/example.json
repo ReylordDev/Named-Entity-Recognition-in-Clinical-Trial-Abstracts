@@ -1,0 +1,35 @@
+[
+ {
+  "abstract_id": "20092584",
+  "sentences": [
+   {
+    "words": [
+      ...
+     "therapy",
+     ",",
+     "using",
+     "premixed",
+     "insulin",
+     "(",
+     "premix",
+     ")",
+     "twice",
+     "daily",
+     "."
+    ],
+    "entities": [
+     {
+      "start_pos": 48,
+      "end_pos": 49,
+      "label": "Frequency",
+      "words": [
+       "twice",
+       "daily"
+      ]
+     },...
+    ],
+    "sentence_id": "9"
+   },...
+  ]
+ }
+]
