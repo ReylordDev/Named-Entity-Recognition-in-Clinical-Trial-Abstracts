@@ -1,0 +1,305 @@
+[
+  {
+    "sentences": [
+      {
+        "words": ["Good", "day", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Salutation",
+            "words": ["Good", "day", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hello", "World", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hi", "there", "!"],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Greeting",
+            "words": ["Hi", "there", "!"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Good", "day", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Salutation",
+            "words": ["Good", "day", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hello", "World", ".", "Blabla"],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hi", "there", "!", "Hello", "World", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Greeting",
+            "words": ["Hi", "there", "!"]
+          },
+          {
+            "start_pos": 3,
+            "end_pos": 5,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Good", "day", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Salutation",
+            "words": ["Good", "day", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hello", "World", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hi", "there", "!"],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Greeting",
+            "words": ["Hi", "there", "!"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Good", "day", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Salutation",
+            "words": ["Good", "day", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hello", "World", ".", "Blabla"],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hi", "there", "!", "Hello", "World", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Greeting",
+            "words": ["Hi", "there", "!"]
+          },
+          {
+            "start_pos": 3,
+            "end_pos": 5,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Good", "day", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Salutation",
+            "words": ["Good", "day", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hello", "World", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hi", "there", "!"],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Greeting",
+            "words": ["Hi", "there", "!"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Good", "day", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Salutation",
+            "words": ["Good", "day", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hello", "World", ".", "Blabla"],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Hi", "there", "!", "Hello", "World", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Greeting",
+            "words": ["Hi", "there", "!"]
+          },
+          {
+            "start_pos": 3,
+            "end_pos": 5,
+            "label": "HelloWorld",
+            "words": ["Hello", "World", "."]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sentences": [
+      {
+        "words": ["Good", "day", "."],
+        "entities": [
+          {
+            "start_pos": 0,
+            "end_pos": 2,
+            "label": "Salutation",
+            "words": ["Good", "day", "."]
+          }
+        ]
+      }
+    ]
+  }
+]

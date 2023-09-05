@@ -1,8 +1,7 @@
 import json
 import random
-import numpy as np
 import torch
-from torch.utils.data import Dataset, DataLoader, random_split
+from torch.utils.data import Dataset, DataLoader
 
 # Global variables
 TRAIN_DATA_PATH = "data/train.json"
@@ -174,26 +173,51 @@ class NERDataset(Dataset):
         }
 
 
-def split_data(sentences, labels, train_ratio=0.8, val_ratio=0.1):
+def split_data(sentences, labels, split_ratio=0.9):
     """
-    Split the dataset into training, validation, and test sets.
+    Split the data into training and validation sets
     """
-    total_size = len(sentences)
-    train_size = int(total_size * train_ratio)
-    val_size = int(total_size * val_ratio)
-    test_size = total_size - train_size - val_size
+    # Determine the split index
+    split_idx = int(len(sentences) * split_ratio)
 
-    dataset = NERDataset(sentences, labels)
-    return random_split(dataset, [train_size, val_size, test_size])
+    # Split the sentences and labels
+    train_sentences = sentences[:split_idx]
+    val_sentences = sentences[split_idx:]
+    train_labels = labels[:split_idx]
+    val_labels = labels[split_idx:]
+
+    return train_sentences, train_labels, val_sentences, val_labels
 
 
-def create_data_loaders(train_data, val_data, test_data, batch_size=32):
+def create_data_loaders(
+    train_sentences,
+    train_labels,
+    val_sentences,
+    val_labels,
+    test_sentences,
+    test_labels,
+    batch_size=32,
+):
     """
-    Create data loaders for training, validation, and test datasets.
+    Create DataLoaders for training, validation, and test datasets
     """
-    train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
-    val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
-    test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
+    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    generator = torch.Generator(device=device)
+    # Create training, validation, and test datasets
+    train_dataset = NERDataset(train_sentences, train_labels)
+    val_dataset = NERDataset(val_sentences, val_labels)
+    test_dataset = NERDataset(test_sentences, test_labels)
+
+    # Create DataLoaders for each dataset
+    train_loader = DataLoader(
+        train_dataset, shuffle=True, batch_size=batch_size, generator=generator
+    )
+    val_loader = DataLoader(
+        val_dataset, shuffle=False, batch_size=batch_size, generator=generator
+    )
+    test_loader = DataLoader(
+        test_dataset, shuffle=False, batch_size=batch_size, generator=generator
+    )
 
     return train_loader, val_loader, test_loader
 
@@ -209,8 +233,8 @@ def sample_data(sentences, labels, sample_size=5):
 def tensor_to_sentences(tensor, idx_to_word):
     decoded_sentences = []
     for sentence in tensor:
-        decoded_sentence = [idx_to_word[idx] for idx in sentence]
-        decoded_sentences.append(" ".join(decoded_sentence))
+        decoded_sentence = [idx_to_word[idx.item()] for idx in sentence]
+        decoded_sentences.append((decoded_sentence))
     return decoded_sentences
 
 
@@ -229,9 +253,11 @@ def tensor_to_labels(tensor, idx_to_label):
     return decoded_labels
 
 
-def main():
+def prepare_data_pipeline(
+    train_file_path=TRAIN_DATA_PATH, test_file_path=TEST_DATA_PATH, debug=False
+):
     # Load data
-    train_data, test_data = load_data(TRAIN_DATA_PATH, TEST_DATA_PATH)
+    train_data, test_data = load_data(train_file_path, test_file_path)
 
     # Extract sentences and labels
     train_sentences, train_raw_labels = extract_sentences_and_labels(train_data)
@@ -239,16 +265,16 @@ def main():
 
     # Generate label vocabulary
     label_vocab = generate_label_vocab(train_raw_labels + test_raw_labels)
-    label_to_idx = build_label_to_idx(label_vocab)
-    idx_to_label = build_idx_to_label(label_to_idx)
 
     # Encode labels
     train_encoded_labels = encode_labels(train_raw_labels, label_vocab, train_sentences)
     test_encoded_labels = encode_labels(test_raw_labels, label_vocab, test_sentences)
 
-    # Build word to idx and idx to word
+    # Build the conversion dictionaries
     word_to_idx = build_word_to_idx(train_sentences + test_sentences)
     idx_to_word = build_idx_to_word(word_to_idx)
+    label_to_idx = build_label_to_idx(label_vocab)
+    idx_to_label = build_idx_to_label(label_to_idx)
 
     # Encode sentences
     train_encoded_sentences = encode_sentences(train_sentences, word_to_idx)
@@ -268,21 +294,53 @@ def main():
         test_encoded_labels, [0] * len(label_vocab), MAX_LENGTH
     )
 
-    # Print example data
-    example_idx = 1  # Change this to see different examples
+    if debug:
+        # Print example data
+        example_idx = 1  # Change this to see different examples
 
-    print(
-        f"Train data length: {len(train_sentences)}, Test data length: {len(test_sentences)}"
+        print(
+            f"Train data length: {len(train_sentences)}, Test data length: {len(test_sentences)}"
+        )
+        print(f"Example sentence: {' '.join(train_sentences[example_idx])}")
+        print(f"Example labels: {train_raw_labels[example_idx]}")
+
+        print(f"Encoded sentence: {train_encoded_sentences[example_idx]}")
+        print(f"Encoded labels: {train_encoded_labels[example_idx]}")
+
+        print(f"Padded sentence: {padded_train_sentences[example_idx]}")
+        print(f"Padded labels: {padded_train_labels[example_idx]}")
+
+    # Split training data into training and validation sets
+    train_sentences, train_labels, val_sentences, val_labels = split_data(
+        padded_train_sentences, padded_train_labels
     )
-    print(f"Example sentence: {' '.join(train_sentences[example_idx])}")
-    print(f"Example labels: {train_raw_labels[example_idx]}")
 
-    print(f"Encoded sentence: {train_encoded_sentences[example_idx]}")
-    print(f"Encoded labels: {train_encoded_labels[example_idx]}")
+    if debug:
+        print(
+            f"Train data length: {len(train_sentences)}, Validation data length: {len(val_sentences)}"
+        )
 
-    print(f"Padded sentence: {padded_train_sentences[example_idx]}")
-    print(f"Padded labels: {padded_train_labels[example_idx]}")
+    # Create DataLoaders
+    train_loader, val_loader, test_loader = create_data_loaders(
+        train_sentences,
+        train_labels,
+        val_sentences,
+        val_labels,
+        padded_test_sentences,
+        padded_test_labels,
+    )
+
+    return (
+        train_loader,
+        val_loader,
+        test_loader,
+        MAX_LENGTH,
+        word_to_idx,
+        idx_to_word,
+        label_to_idx,
+        idx_to_label,
+    )
 
 
-# Uncomment the following line to run the main function
-# main()
+if __name__ == "__main__":
+    prepare_data_pipeline(TRAIN_DATA_PATH, TEST_DATA_PATH, debug=True)
