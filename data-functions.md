@@ -31,29 +31,6 @@
     - **Output**: Maximum length among all sentences.
     - **Purpose**: Find the maximum length among all sentences for dynamic padding.
 
-## Utility Functions
-
-1. **`sample_data`**:
-    - **Input**: Sentences and labels.
-    - **Output**: Randomly sampled subset of sentences and labels.
-    - **Purpose**: Easily inspect a subset of the data for quick debugging.
-
-2. **`tensor_to_sentences`**:
-    - **Input**: Mini-batched data tensor representing tokenized sentences.
-    - **Output**: List of natural language sentences.
-    - **Purpose**: Transform mini-batched data tensor into readable sentences for debugging or analysis.
-
-3. **`tensor_to_labels`**:
-    - **Input**: Mini-batched data tensor representing multi-hot encoded labels.
-    - **Output**: List of label annotations in natural language.
-    - **Purpose**: Transform mini-batched data tensor into readable labels for debugging or analysis.
-
-## Main Function
-
-- **Input**: None
-- **Output**: Preprocessed and padded sentences and labels for both training and testing.
-- **Purpose**: To showcase the complete preprocessing pipeline.
-
 7. **`encode_sentences`**:
     - **Input**: List of tokenized sentences and a vocabulary of unique words.
     - **Output**: Encoded sentences where each word is replaced by its index in the vocabulary.
@@ -78,3 +55,27 @@
     - **Input**: `label_to_idx` dictionary.
     - **Output**: A dictionary mapping each index back to its corresponding label.
     - **Purpose**: Build a reverse mapping from indices to labels for decoding.
+
+## Utility Functions
+
+1. **`sample_data`**:
+    - **Input**: Sentences and labels.
+    - **Output**: Randomly sampled subset of sentences and labels.
+    - **Purpose**: Easily inspect a subset of the data for quick debugging.
+
+2. **`tensor_to_sentences`**:
+    - **Input**: Mini-batched data tensor representing tokenized sentences.
+    - **Output**: List of natural language sentences.
+    - **Purpose**: Transform mini-batched data tensor into readable sentences for debugging or analysis.
+
+3. **`tensor_to_labels`**:
+    - **Input**: Mini-batched data tensor representing multi-hot encoded labels.
+    - **Output**: List of label annotations in natural language.
+    - **Purpose**: Transform mini-batched data tensor into readable labels for debugging or analysis.
+
+## Main Function
+
+- **Input**: None
+- **Output**: Preprocessed and padded sentences and labels for both training and testing.
+- **Purpose**: To showcase the complete preprocessing pipeline.
+

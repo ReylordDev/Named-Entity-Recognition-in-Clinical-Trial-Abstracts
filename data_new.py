@@ -1,6 +1,8 @@
 import json
 import random
 import numpy as np
+import torch
+from torch.utils.data import Dataset, DataLoader, random_split
 
 # Global variables
 TRAIN_DATA_PATH = "data/train.json"
@@ -155,6 +157,45 @@ def find_max_length(sentences):
     int: Maximum length among all sentences.
     """
     return max(len(sentence) for sentence in sentences)
+
+
+class NERDataset(Dataset):
+    def __init__(self, sentences, labels):
+        self.sentences = sentences
+        self.labels = labels
+
+    def __len__(self):
+        return len(self.sentences)
+
+    def __getitem__(self, idx):
+        return {
+            "sentence": torch.tensor(self.sentences[idx], dtype=torch.long),
+            "label": torch.tensor(self.labels[idx], dtype=torch.float),
+        }
+
+
+def split_data(sentences, labels, train_ratio=0.8, val_ratio=0.1):
+    """
+    Split the dataset into training, validation, and test sets.
+    """
+    total_size = len(sentences)
+    train_size = int(total_size * train_ratio)
+    val_size = int(total_size * val_ratio)
+    test_size = total_size - train_size - val_size
+
+    dataset = NERDataset(sentences, labels)
+    return random_split(dataset, [train_size, val_size, test_size])
+
+
+def create_data_loaders(train_data, val_data, test_data, batch_size=32):
+    """
+    Create data loaders for training, validation, and test datasets.
+    """
+    train_loader = DataLoader(train_data, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(val_data, batch_size=batch_size, shuffle=False)
+    test_loader = DataLoader(test_data, batch_size=batch_size, shuffle=False)
+
+    return train_loader, val_loader, test_loader
 
 
 # Utility Functions
