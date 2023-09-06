@@ -158,6 +158,7 @@ def find_max_length(sentences):
     return max(len(sentence) for sentence in sentences)
 
 
+# Fix the get item for the llm
 class NERDataset(Dataset):
     def __init__(self, sentences, labels):
         self.sentences = sentences
@@ -167,10 +168,7 @@ class NERDataset(Dataset):
         return len(self.sentences)
 
     def __getitem__(self, idx):
-        return {
-            "sentence": torch.tensor(self.sentences[idx], dtype=torch.long),
-            "label": torch.tensor(self.labels[idx], dtype=torch.float),
-        }
+        return {"sentence": self.sentences[idx], "label": self.labels[idx]}
 
 
 def split_data(sentences, labels, split_ratio=0.9):
