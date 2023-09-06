@@ -201,7 +201,8 @@ def create_data_loaders(
     """
     Create DataLoaders for training, validation, and test datasets
     """
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    device = torch.device("cpu")
     generator = torch.Generator(device=device)
     # Create training, validation, and test datasets
     train_dataset = NERDataset(train_sentences, train_labels)
