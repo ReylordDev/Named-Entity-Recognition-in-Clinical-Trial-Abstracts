@@ -171,18 +171,28 @@ class NERDataset(Dataset):
         return {"sentence": self.sentences[idx], "label": self.labels[idx]}
 
 
-def split_data(sentences, labels, split_ratio=0.9):
+def split_data(sentences, labels, split_ratio=0.9, shuffle=True):
     """
     Split the data into training and validation sets
     """
+    assert len(sentences) == len(
+        labels
+    ), "Sentences and labels should have the same length."
+
+    # Shuffle sentences and labels if shuffle is True
+    if shuffle:
+        combined = list(zip(sentences, labels))
+        random.shuffle(combined)
+        sentences, labels = zip(*combined)
+
     # Determine the split index
     split_idx = int(len(sentences) * split_ratio)
 
     # Split the sentences and labels
-    train_sentences = sentences[:split_idx]
-    val_sentences = sentences[split_idx:]
-    train_labels = labels[:split_idx]
-    val_labels = labels[split_idx:]
+    train_sentences = list(sentences[:split_idx])
+    val_sentences = list(sentences[split_idx:])
+    train_labels = list(labels[:split_idx])
+    val_labels = list(labels[split_idx:])
 
     return train_sentences, train_labels, val_sentences, val_labels
 

@@ -1,4 +1,5 @@
 .vscode
+desktop.ini
 wandb
 .tmp.*
 # Byte-compiled / optimized / DLL files

@@ -1,0 +1,26 @@
+{
+    "Achievements": [
+        "Specified the application domain as Clinical Trial Abstracts.",
+        "Disclosed the labels to recognize including 'Author, PMID, Title, etc.",
+        "Shared that a pretrained DistilBERT model is being used for token classification.",
+        "Stated that random sentences from the dataset of abstracts are used for input.",
+        "Decided to proceed with domain-specific preprocessing for fine-tuning DistilBERT.",
+        "Decided to implement preprocessing, focusing on the aspect of context incorporation.",
+        "Provided a sample Clinical Trial Abstract for review and analysis.",
+        "Returning to task 2: Assess how well the model currently identifies the specific labels."
+    ],
+    "Tasks": {
+        "Improve NLP Model in Named Entity Recognition": [
+            "Review the format and characteristics of Clinical Trial Abstracts.",
+            "Assess how well the model currently identifies the specific labels ('Author, PMID, Title, etc.).",
+            "Discuss the implications and limitations of using a pretrained DistilBERT model and random sentences from the dataset.",
+            "Research state-of-the-art methods specific to Clinical Trial Abstract NER.",
+            "Collect or create additional domain-specific data if necessary.",
+            "Design features that capture the contextual information from the abstract.",
+            "Optimize hyperparameters.",
+            "Retrain the model with the new features and data.",
+            "Evaluate the new model on a test set.",
+            "Document and summarize the improvements and performance gains."
+        ]
+    }
+}
