@@ -424,23 +424,15 @@
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
       [],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
       [],
       [],
       [],
@@ -449,15 +441,9 @@
       [],
       [],
       [],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
       []
     ],
     [
@@ -475,18 +461,12 @@
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
       [],
@@ -495,15 +475,9 @@
       [],
       [],
       [],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
       []
     ],
     [
@@ -511,20 +485,14 @@
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
       [],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
       [],
@@ -538,15 +506,9 @@
       [],
       [],
       [],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
       []
     ],
     [
@@ -556,9 +518,7 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsCT"
-      ],
+      ["NumberPatientsCT"],
       [],
       [],
       [],
@@ -566,29 +526,17 @@
       [],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
+      ["DoseValue"],
+      ["DoseValue"],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -623,9 +571,7 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsCT"
-      ],
+      ["NumberPatientsCT"],
       [],
       [],
       [],
@@ -633,29 +579,17 @@
       [],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
+      ["DoseValue"],
+      ["DoseValue"],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -690,9 +624,7 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsCT"
-      ],
+      ["NumberPatientsCT"],
       [],
       [],
       [],
@@ -700,29 +632,17 @@
       [],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
+      ["DoseValue"],
+      ["DoseValue"],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -757,9 +677,7 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsCT"
-      ],
+      ["NumberPatientsCT"],
       [],
       [],
       [],
@@ -767,29 +685,17 @@
       [],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
+      ["DoseValue"],
+      ["DoseValue"],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -824,47 +730,27 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsCT"
-      ],
+      ["NumberPatientsCT"],
       [],
       [],
       [],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
       [],
       [],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
+      ["DoseValue"],
+      ["DoseValue"],
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -894,9 +780,7 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsCT"
-      ],
+      ["NumberPatientsCT"],
       [],
       [],
       [],
@@ -904,26 +788,14 @@
       [],
       [],
       [],
-      [
-        "Drug"
-      ],
+      ["Drug"],
       [],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
+      ["DoseValue"],
+      ["DoseValue"],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],

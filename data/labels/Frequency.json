@@ -654,33 +654,21 @@
       [],
       [],
       [],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
       [],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       []
     ],
     [
@@ -689,31 +677,19 @@
       [],
       [],
       [],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       []
     ],
     [
@@ -722,68 +698,42 @@
       [],
       [],
       [],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
-      [
-        "AllocationRatio"
-      ],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
+      ["AllocationRatio"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       []
     ],
     [
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -802,38 +752,24 @@
       []
     ],
     [
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -850,38 +786,24 @@
       []
     ],
     [
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
       [],
-      [
-        "DoseValue"
-      ],
+      ["DoseValue"],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -900,807 +822,255 @@
     [
       [],
       [],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ]
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"]
     ],
     [
       [],
       [],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ]
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription", "Precondition", "Precondition"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"]
     ],
     [
       [],
       [],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "Frequency",
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription",
-        "Precondition"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ],
-      [
-        "ObjectiveDescription"
-      ]
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["Frequency", "ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription", "Precondition"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"],
+      ["ObjectiveDescription"]
     ],
     [
       [],
@@ -1722,15 +1092,9 @@
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -1754,20 +1118,12 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
       [],
       [],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
       [],
       [],
       [],
@@ -1775,43 +1131,21 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
       [],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
       []
     ],
     [
@@ -1833,15 +1167,9 @@
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -1865,20 +1193,12 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
       [],
       [],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
       [],
       [],
       [],
@@ -1886,15 +1206,9 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
@@ -1902,18 +1216,10 @@
       [],
       [],
       [],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
       []
     ],
     [
@@ -1937,15 +1243,9 @@
       [],
       [],
       [],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
+      ["Frequency"],
+      ["Frequency"],
       [],
       [],
       [],
@@ -1969,20 +1269,12 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
       [],
       [],
-      [
-        "Frequency"
-      ],
+      ["Frequency"],
       [],
       [],
       [],
@@ -1990,36 +1282,18 @@
       [],
       [],
       [],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
-      [
-        "NumberPatientsArm"
-      ],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
+      ["NumberPatientsArm"],
       [],
       [],
       [],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
-      [
-        "Precondition"
-      ],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
+      ["Precondition"],
       []
     ]
   ]
