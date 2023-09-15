@@ -1,37 +1,37 @@
-Label,Count,Percentage
-PMID,87,0.39657214656472206
-FinalNumPatientsArm,19,0.08660771418362856
-AvgAge,54,0.24614823050796986
-NumberAffected,46,0.2096818294376135
-Title,2538,11.568967252969742
-PercentageAffected,545,2.484273910522461
-Country,23,0.10484091471880674
-Drug,12,0.054699607426300645
-PublicationYear,87,0.39657214656472206
-ConfIntervalDiff,840,3.828972578048706
-CTDesign,73,0.3327559446915984
-RelativeChangeValue,4,0.018233201990369707
-DiffGroupAbsValue,374,1.7048044130206108
-Author,1438,6.55483603477478
-AllocationRatio,91,0.41480534709990025
-SdDevResValue,705,3.2136019319295883
-Journal,285,1.2991157360374928
-SdDevChangeValue,111,0.5059713963419199
-PValueChangeValue,245,1.1167836375534534
-NumberPatientsCT,86,0.39201383478939533
-ObjectiveDescription,3931,17.918680608272552
-ObservedResult,724,3.30020971596241
-MinAge,14,0.06381620769388974
-NumberPatientsArm,124,0.5652292631566525
-ConclusionComment,3469,15.812745690345764
-DoseValue,130,0.5925790872424841
-DoseDescription,251,1.1441335082054138
-TimePoint,177,0.8068191818892956
-SubGroupDescription,132,0.6016957107931376
-Frequency,313,1.4267480932176113
-AggregationMethod,93,0.4239219706505537
-SdDevBL,103,0.4695049487054348
-PvalueDiff,1443,6.57762810587883
-Precondition,2155,9.823138266801834
-ConfIntervalChangeValue,248,1.130458526313305
-ResultMeasuredValue,968,4.412434995174408
+Label                   ,Count ,Percentage
+AllocationRatio         ,   79 , 0.4069647751748562
+DoseValue               ,  103 , 0.5305996164679527
+ConclusionComment       , 3469 ,17.87038892507553
+Title                   , 2447 ,12.605604529380798
+MinAge                  ,   14 , 0.07212033960968256
+PvalueDiff              ,  986 , 5.0793323665857315
+AvgAge                  ,   54 , 0.27817843947559595
+Drug                    ,    3 , 0.015454358072020113
+NumberPatientsCT        ,   78 , 0.40181330405175686
+Author                  , 1406 , 7.242942601442337
+CTDesign                ,   40 , 0.2060580998659134
+Frequency               ,  225 , 1.1590768583118916
+PMID                    ,   87 , 0.4481764044612646
+SdDevChangeValue        ,  111 , 0.5718112457543612
+RelativeChangeValue     ,    1 , 0.005151452569407411
+SdDevBL                 ,  103 , 0.5305996164679527
+Journal                 ,  285 , 1.4681640081107616
+FinalNumPatientsArm     ,   15 , 0.07727179327048361
+SdDevResValue           ,  201 , 1.035442017018795
+ObservedResult          ,  724 , 3.7296518683433533
+ConfIntervalChangeValue ,  155 , 0.7984751835465431
+Country                 ,   10 , 0.05151452496647835
+PublicationYear         ,   87 , 0.4481764044612646
+DiffGroupAbsValue       ,  368 , 1.8957346677780151
+ConfIntervalDiff        ,  824 , 4.244796931743622
+PercentageAffected      ,  527 , 2.7148155495524406
+PValueChangeValue       ,  242 , 1.246651541441679
+SubGroupDescription     ,  132 , 0.6799917668104172
+ObjectiveDescription    , 3498 ,18.01978200674057
+AggregationMethod       ,    9 , 0.04636307421606034
+ResultMeasuredValue     ,  464 , 2.3902740329504013
+TimePoint               ,  173 , 0.8912012912333012
+NumberAffected          ,   46 , 0.2369668334722519
+NumberPatientsArm       ,   96 , 0.49453945830464363
+DoseDescription         ,  251 , 1.2930146418511868
+Precondition            , 2099 ,10.812899470329285
